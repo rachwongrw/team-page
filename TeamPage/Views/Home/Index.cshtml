@@ -1,25 +1,45 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
+﻿@model IEnumerable<TeamPage.Models.Member>
 
 <div class="container text-center pb-3">
-    <h1 class="display-4">Meet the Team</h1>
+    <h1 class="display-4 mb-5">Meet the Team</h1>
+
+    @if (Model.Any())
+    {
+        <div class="row">
+            @foreach (var person in Model)
+            {
+                <div class="col-md-4">
+                    <h5>Hello</h5>
+                    @*<div class="member">
+                            <img src="@person.Picture" style="width: 100%" alt="portrait-img">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <b>@person.Name</b><br />
+                                    @person.Title
+                                </p>
+                            </div>
+                        </div>*@
+                </div>
+            }
+        </div>
+    }
+
+    
     <div class="row">
         <div class="col-md-4">
             <div class="member">
                 <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80" style="width: 100%" alt="portrait-img">
                 <div class="card-body">
                     <p class="card-text">
-                        <b>Mark Pontiac</b><br/>
+                        <b>Mark Pontiac</b><br />
                         Manager
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="member pt-3">
+        <div class="col-md-5">
+            <div class="member pt-4">
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" style="width: 100%" alt="portrait-img">
                 <div class="card-body">
                     <p class="card-text">
@@ -31,16 +51,18 @@
         </div>
 
         <div class="col-md-4">
-            <div class="member pt-n1">
+            <div class="member mt-n4">
                 <img src="https://images.unsplash.com/photo-1568658175897-22c7c272cd29?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" style="width: 100%" alt="portrait-img">
                 <div class="card-body">
                     <p class="card-text">
-                        <b>Sirius Kota</b><br/>
+                        <b>Sirius Kota</b><br />
                         Coding Wizard
                     </p>
                 </div>
             </div>
         </div>
+
+
     </div>
-    
+
 </div>
