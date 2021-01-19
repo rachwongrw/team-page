@@ -1,30 +1,24 @@
 ﻿@model  IEnumerable<TeamPage.Models.Member>
-
-<script>const members = [
-        { name: "Mark Pontiac", title: "Manager", bio: "He loves skiing on the weekend", picture: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80" },
-        { name: "Sarah Callaway", title: "Associate Fun Coordinator", bio: "Love a cheese and wine night", picture: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" },
-        { name: "Sirius Kota", title: "Coding Wizard", bio: "Sirius Kota is our senior full stack developer. He was originally from Sao Paolo, and moved to Vancouver for the mountains.", picture: "https://images.unsplash.com/photo-1568658175897-22c7c272cd29?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" }
-    ]</script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 <div class="container text-center pb-3">
     <h1 class="display-4 mb-5">Our Team</h1>
-
     <div class="row">
 
         @*@foreach (var person in Model)
-        {
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="img-container">
-                    <img class="portrait-img" src="@person.Picture" alt="portrait-img" />
-                    <p class="bio">@person.Bio</p>
-                </div>
-                <p class="card-text">
-                    <b class="name">@person.Name</b><br />
-                    @person.Title
-                </p>
+            {
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="img-container">
+                        <img class="portrait-img" src="@person.Picture" alt="portrait-img" />
+                        <p class="bio">@person.Bio</p>
+                    </div>
+                    <p class="card-text">
+                        <b class="name">@person.Name</b><br />
+                        @person.Title
+                    </p>
 
-            </div>
-        }*@
+                </div>
+            }*@
 
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="img-container">
@@ -133,3 +127,22 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    const members = [
+        { name: "Mark Pontiac", title: "Manager", bio: "He loves skiing on the weekend", picture: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80" },
+        { name: "Sarah Callaway", title: "Associate Fun Coordinator", bio: "Love a cheese and wine night", picture: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" },
+        { name: "Sirius Kota", title: "Coding Wizard", bio: "Sirius Kota is our senior full stack developer. He was originally from Sao Paolo, and moved to Vancouver for the mountains.", picture: "https://images.unsplash.com/photo-1568658175897-22c7c272cd29?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" }
+    ]
+
+
+    $(".name").hover(function () {
+        $(".name").css("color", "rgba(102,201,186,1)");
+       
+    }, function () {
+       $(".name").css("color", "black");
+    });
+
+
+</script>
