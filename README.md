@@ -13,3 +13,13 @@ This test intentionally contains few guidelines. We will assess your attention t
 Please return the completed project when you are finished and indicate the time you spent to complete the task.
 
 Show us your creativity
+
+
+
+## Research / Inspiration
+Some interesting team pages I found to draw some inspiration on
+
+[RNO1](https://rno1.com/about)
+[Kota](https://kota.co.uk/studio)
+[Bleech](https://bleech.de/en/)
+[Engage Massive](https://engagemassive.com/agency-strategists/)
