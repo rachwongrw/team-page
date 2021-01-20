@@ -71,6 +71,7 @@ body {
 }
 
 
+/* ---------------- IMG CONTAINER ---------------- */
 .img-container {
     position: relative;
     padding: 0 1em;
@@ -101,7 +102,8 @@ body {
     padding-bottom: 1em;
 }
 
+/* ---------------- CARD ---------------- */
+
 .name {
-    color: black;
     letter-spacing: 1px;
 }
