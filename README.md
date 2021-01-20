@@ -19,7 +19,7 @@ Show us your creativity
 ## Research / Inspiration
 Some interesting team pages I found to draw some inspiration on
 
-[RNO1](https://rno1.com/about)
-[Kota](https://kota.co.uk/studio)
-[Bleech](https://bleech.de/en/)
-[Engage Massive](https://engagemassive.com/agency-strategists/)
+- [RNO1](https://rno1.com/about)
+- [Kota](https://kota.co.uk/studio)
+- [Bleech](https://bleech.de/en/)
+- [Engage Massive](https://engagemassive.com/agency-strategists/)
